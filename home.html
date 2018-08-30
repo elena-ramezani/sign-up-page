@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css"> 
+	<title>Home</title>
+
+	<script type="text/javascript">
+		function passMatch() {
+			var passText = document.getElementById("password").value;
+			var passMatchText = document.getElementById("confirmPassword").value;
+			var noMatch = document.getElementById("nomatch");
+			if (passText != passMatchText) {
+				noMatch.textContent = "passwords don't match!";
+			}
+			else {
+				noMatch.textContent = "";
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<!-- start of login form -->		
+	<center> <br/>
+		<h1>Registered Users</h1>
+		<form action="php/login.php" method="post">
+			<label>Username</label>
+			<input type="text" name="username" value="" required />
+			<br/><br/>	<!-- end username section -->
+
+			<label>Password</label>
+			<input type="password" name="password" value="" required /> 				
+			<br/><br/>	<!-- end password section -->
+
+			<input type="submit" value="Log in"/>
+		</div>
+	</form></center>
+</section>
+<!-- end of login form -->
+
+<!-- start of signup form -->		
+<center>
+		<br/><br/>
+		<h1>New Users</h1>
+		<form action="php/signup.php" method="post">
+			<label>First name</label>
+			<input type="text" name="firstname" value=""/>
+			<br/><br/><label>Last name</label>
+			<input type="text" name="lastname" value=""/>
+			<br/><br/><label>Phone</label>
+			<input type="text" name="phone" value=""/>
+			<br/><br/><label>Email</label>
+			<input type="text" name="email" value=""/>
+			<br/><br/><label>Username</label>
+			<input type="text" name="username" value=""/>			
+			<br/><br/><label>Password</label>
+			<input type="password" id="password" name="password" required />
+			<br/><br/><label>Retype password</label>
+			<input type="password" id="confirmPassword" name="Retype password" onkeyup="passMatch()" required />
+			<span id="nomatch" style="color: red;"></span>	
+			<br/><br/>	<!-- end password section -->
+
+			<input type="submit" value="sign up"/>				
+		</form>
+	
+</center>
+</section>
+<!-- end of login form -->
+
+</body>
+
+</html>

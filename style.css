@@ -1,0 +1,49 @@
+﻿/*
+    just some basic css for style.
+*/
+body {    
+    background-color: rgb(106, 90, 205);
+    color: lightblue;
+    font: 14px Arial;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+table {
+    background-color: rgb(100, 98, 199);
+    color: rgb(0,204,204);
+    font: 14px Arial;
+    font-style: bold;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+th {
+    background-color: rgb(110,110,0);
+    color: (0,234,234)
+}
+
+td {
+    text-align: center;
+    float: inherit;
+    background-color: rgb(128,128,0);
+}
+
+h1 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+div {
+    background-color: lightblue;
+}
